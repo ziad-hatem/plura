@@ -109,7 +109,7 @@ model SubAccount {
   name             String
   subAccountLogo   String                    @db.Text
   createdAt        DateTime                  @default(now())
-  updatedAt        DateTime                  @updatedAt
+  updatedAt        DateTime                  @default(now())
   companyEmail     String                    @db.Text
   companyPhone     String
   goal             Int                       @default(5)
